@@ -114,6 +114,9 @@ func DrawChart(data map[string][]GraphPoint, filename string) {
 			Style: chart.Style{
 				Show: true,
 			},
+			TickStyle: chart.Style{
+				TextRotationDegrees: 45.0,
+			},
 			ValueFormatter: chart.TimeValueFormatterWithFormat("15:04:05"),
 			GridMajorStyle: chart.Style{
 				Show:        true,
